@@ -1,0 +1,11 @@
+.main{
+    position: absolute;
+    top:120px;
+    left: 120px;
+    bottom: 120px;
+    background: rgba(22, 22, 22, .9);
+    width: 80%;
+    height: auto;
+    padding: 10px 10px;
+    color: aquamarine   ;
+}
