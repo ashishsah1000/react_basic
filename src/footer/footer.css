@@ -1,8 +1,12 @@
-.footer{
-    position: sticky;
-    bottom: 0;
-    width: 100vw;
-    height: 100px;
-    background: red;
-    margin-left: 100px;
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 100px;
+  background: red;
+  margin-left: 100px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
