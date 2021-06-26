@@ -32,7 +32,7 @@ const Nav = () => {
 
       <div className="time">
         <div>
-          <span> <h2>Current time is :</h2><h2  className="headTime">{time!=""?time:" Intializing"}</h2></span>
+          <span> <h2>Current time is :</h2><strong><h2  className="headTime">{time!=""?time:" Intializing"}</h2></strong></span>
         <span><CalendarToday  className="iconCal"/>  {time!=""?TimeX:"Your session is being intialized"}</span>
         </div>
         

@@ -51,7 +51,26 @@
 }
 .headTime{
   font-size: 18px;
+  color:rgba(100, 141, 230, 0.664);
+  margin-left:2px;
 }
 .nav head > div{
-  float: right !important;
+  /* float: right !important; */
+}
+
+@media only screen and (max-width: 700px) {
+  .nav{
+    height: 70px;
+  }
+   .logo img{
+    height: 35px !important;
+    width: 35px !important;
+
+  }
+  .time h2{
+    font-size: 15px;;
+  }
+  .time{
+    right: -20px;
+  }
 }
