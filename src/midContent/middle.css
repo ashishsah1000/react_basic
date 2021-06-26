@@ -16,10 +16,32 @@
     margin: 10px 10px;
     transition: 1s ease;
     font-weight:600;
-    cursor:pointer; 
+    cursor:pointer;
+    animation: blink2 2s ease;
+
 }
 .mlogs:hover{
     
     color: rgba(14, 13, 29, 1);
     
+}
+
+@keyframes blink2 {
+    0% {
+        opacity: 0;
+        color:orangered;
+        font-weight: strong;
+      }
+  
+ 
+    50% {
+      opacity: 1;
+      color:red;
+      font-weight: strong;
+    }
+
+  }
+  
+.noData{
+    margin-left: 20px;
 }

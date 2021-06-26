@@ -4,10 +4,12 @@ import logo from "../images/logo.png"
 import "./nav.css";
 import { Button } from "@material-ui/core";
 import  CalendarToday  from "@material-ui/icons/CalendarTodayOutlined";
+import Clock from "@material-ui/icons/Timer";
 
 const Nav = () => {
   const [time, getTime] = useState("");
   const Time = new Date()
+  const TimeX = Time.toDateString()
   useEffect(() => {
     const interval = setInterval(() => {
       const Time2 = new Date();
@@ -30,8 +32,8 @@ const Nav = () => {
 
       <div className="time">
         <div>
-          <h2 className="headTime">{time}</h2>
-        <span><CalendarToday  className="iconCal"/>  {Time.toDateString()}</span>
+          <span> <h2>Current time is :</h2><h2  className="headTime">{time!=""?time:" Intializing"}</h2></span>
+        <span><CalendarToday  className="iconCal"/>  {time!=""?TimeX:"Your session is being intialized"}</span>
         </div>
         
       </div>
