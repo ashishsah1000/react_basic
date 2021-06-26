@@ -12,7 +12,7 @@ const theme = createMuiTheme({
       main: "#006400"
     },
     secondary: {
-      main: "#ffa500"
+      main: "#c62828"
     }
   }
 });
@@ -34,6 +34,6 @@ function App() {
         </Switch>
       </div>
     </Router>
-  );
-}
-export default App;
+    );
+  }
+  export default App;

@@ -7,7 +7,7 @@ const Footer = () => {
   const [{ bucket }] = useStateValue();
   return (
     <div className="footer">
-      <h1>You have clicked {bucket.length} Times</h1>
+      <h4>You have clicked {bucket.length} Times</h4>
     </div>
   );
 };

@@ -2,7 +2,8 @@ import React from "react";
 import "./SideNav.css";
 import { useStateValue } from "../StateProvider";
 import { Button } from "@material-ui/core";
-
+import DeleteIcon from '@material-ui/icons/Delete';
+import AddIcon from '@material-ui/icons/Add';
 const SideNav = () => {
   const time = new Date();
   const [{ bucket }, dispatch] = useStateValue();
@@ -17,11 +18,21 @@ const SideNav = () => {
       }
     });
   };
+  const clearAll = () => {
+    dispatch({
+      type: "REMOVE_ELEMENT"
+    });
+  };
   return (
     <div className="side-nav">
       <div className="side">
         <Button onClick={addEvent} variant="contained" color="primary">
-          Click Me
+          <AddIcon />
+        </Button>
+        <br></br>
+        <br></br>
+        <Button onClick={clearAll} variant="contained" color="secondary"> 
+        <DeleteIcon />
         </Button>
       </div>
     </div>

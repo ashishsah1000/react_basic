@@ -1,5 +1,6 @@
 .side-nav {
-  background-color: peachpuff;
+  background-color: rgba(14, 13, 29, 1);
+
   width: 100px;
   height: 100vh;
   top: 0;
@@ -9,9 +10,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .side-nav Button {
   height: 70px;
   width: 70px;
-  font-size: 12px;
+  font-size: 8px;
+  font-weight: 600;
 }
